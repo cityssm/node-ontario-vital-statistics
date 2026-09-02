@@ -1,0 +1,43 @@
+{
+  "name": "@cityssm/ontario-vital-statistics",
+  "version": "0.1.0",
+  "description": "Tools for municipalities working with Ontario's Vital Statistics data.",
+  "keywords": [
+    "vital-statistics",
+    "ontario",
+    "open-government"
+  ],
+  "homepage": "https://github.com/cityssm/node-ontario-vital-statistics#readme",
+  "bugs": {
+    "url": "https://github.com/cityssm/node-ontario-vital-statistics/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/node-ontario-vital-statistics.git"
+  },
+  "license": "MIT",
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./marriageLicences": "./marriageLicences/index.js"
+  },
+  "files": [
+    "marriageLicences",
+    "index.*"
+  ],
+  "scripts": {
+    "test": "node --test --test-concurrency 1 \"./test/*.test.js\""
+  },
+  "dependencies": {
+    "camelcase": "^9.0.0",
+    "papaparse": "^5.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "@types/papaparse": "^5.5.2",
+    "eslint-config-cityssm": "^50.0.0",
+    "prettier-config-cityssm": "^2.2.0"
+  }
+}
